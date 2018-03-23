@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<!--Aufgabe: Semesteraufgabe
+	Name: Alena Hurst
+	Matrikel: 257742
+	Datum: 23.03.2018
+	Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.-->
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="userpage.css">
+        <meta name="viewport" content="width=device width, initial-scale=1.0, user-scalable=yes">
+		<title>Alena Hurst</title>
+    </head>
+
+    <body>
+
+    <header>
+        <div id="Seitenanfang" class="content">
+        	<img src="Logo.png" class="logo">
+        </div>
+
+		<!-- Navigationsleiste -->
+
+        <div class="nav">
+        	<nav>
+        		<a href="#Userpage">Userpage</a>
+        	</nav>
+        </div>
+    </header>
+
+    <main>
+
+		<!-- Button, um wieder zurück zum Beginn der Seite zu kommen -->
+
+    	<button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+    	
+    	<!-- Hintergrund - Bild 1 -->
+
+        <div class="img" id="img1"></div>
+        
+        <!-- Erster Content - About Me -->
+
+        <div id="Userpage" class="content">
+
+        	<img src="AboutMe.jpg" alt="Foto Alena Hurst" id="portrait">
+
+        	<div class="textbox">
+	        	<h3 class="textcolor">ABOUT ME</h3>
+	        	<p>EIA 2 - Aufgabenübersicht</p>
+        	</div>
+        	
+        	<div>
+        		<a href="" class="Aufgaben">Aufgabe 1 - Miniseite || 23. März 2018</a>
+        		<a href="https://github.com/alenamaria" class="Aufgaben">Github Repository</a>
+        	</div>
+
+        </div>
+        
+        <!-- Hintergrund - Bild 2 -->
+
+        <div class="img" id="img2"></div>
+        
+    </main>
+
+    <footer>
+
+    	<!-- Vierter Content - Contact -->
+    	
+        <div id="Contact" class="content">
+        
+        	<div class="CategoryContact">
+        		<h3 class="textcolor" id="contact">CONTACT</h3>
+				<p>Alena Hurst</p>
+				<p>alena.hurst@hs-furtwangen.de</p>
+				<p>© Alena Hurst 2018</p>
+		</div>
+        </div>
+
+    </footer>
+
+    </body>
+    
+    <script src="js/userpage.js"></script>
+    
+</html>

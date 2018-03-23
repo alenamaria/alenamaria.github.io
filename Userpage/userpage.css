@@ -1,0 +1,350 @@
+/********** Schrift Einbindung ***********/
+
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+/********** Generell ***********/
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #1b1b1b;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .content {
+        width: 100%;
+        height: auto;
+        float: left;
+        font-family: 'Open Sans', sans-serif;
+        color: #FFFFFF;
+        box-shadow: none;
+    }
+
+    .Category {
+        margin: 100px 50px 50px 50px;
+        padding: 10px;
+        width: 40%;
+        float: left;
+    }
+    
+    a {
+    	text-decoration: none;
+    	color: #0071BC;
+    }
+    
+    .Aufgaben {
+    	background-color: white;
+		border: none;
+		color: #0071BC;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		width: 20%;
+		margin: auto;
+		margin-bottom: 1em;
+    }
+    
+    .Aufgaben:hover {
+    	background-color: #0071BC;
+		color: white;
+    }
+
+/********** Portfolio Logo Alena Hurst ***********/
+
+    #logo {
+        height: 50%;
+        z-index: 10;
+        margin: auto;
+        position: center;
+    }
+
+/********** Hintergrundbilder Settings ***********/
+
+    .img {
+        width: 100%;
+        height: 50vh;
+        float: left;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+/********** Einbindung der Hintergrundbilder per CSS - Aehnlich wie Paralax-Effekt ***********/
+
+    #img1 {
+        background-image: url(background1.jpg);
+    }
+
+    #img2 {
+        background-image: url(background2.jpg);
+    }
+
+/********** Bilder im Portfolio - Settings ***********/
+
+    #portrait {
+        z-index: 8;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+/********** Navigationsleiste Settings ***********/
+
+    .nav {
+        font-family: 'Open Sans', sans-serif;
+        height: 70px;
+        width: 100%;
+        background-color: white;
+        float: left;
+        position: relative;
+        z-index: 20;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 10px 0 10px 0 rgba(0,0,0,0.75);
+    }
+
+    .nav nav a {
+        list-style: none;
+        padding: 22px 15px 15px 15px;
+        overflow: hidden;
+        text-decoration: none;
+        color: #616161;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: transform 0.3s;
+        display: inline-block;
+        font-weight: 300;
+    }
+
+    .nav nav a:hover{
+        color: #0071BC;
+        font-weight: bold;
+    }
+
+/********** Ueberschriften ***********/
+
+    .textcolor {
+        color: #0071BC;
+        font-weight: bold;
+    }
+
+/********** Kategorie Contact ***********/
+
+    #contact {
+        text-align: center;
+    }
+
+    .CategoryContact {
+        margin: 50px 50px 50px 50px;
+        padding: 10px;
+    }
+
+    .CategoryContact p {
+        text-align: center;
+    }
+
+/********** mittig angeordnete Bilder ***********/
+
+    header img {
+    	display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+
+
+/********** Back-to-top Button ***********/
+
+    #myBtn {
+        font-family: 'Open Sans', sans-serif;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: #0071BC;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 12px;
+        z-index: 99;
+    }
+
+    #myBtn:hover {
+        background-color: pink;
+        color: white;
+    }
+
+/********** Responsive Layout - nach mobile-first-Ansatz ***********/
+
+/* Smartphone */
+
+@media screen and (min-width: 0px){
+    .nav nav a {
+        float: clear;
+        background-color: white;
+        display: block;
+    }
+
+    header img {
+    	display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        width: 60%;
+    	}
+
+    #portrait {
+       	z-index: 8;
+       	width: 60%;
+       	display: block;
+        margin-left: auto;
+        margin-right: auto;
+       	border-radius: 50%;
+       	margin-top: 2em;
+       	margin-bottom: 2em;
+    }
+
+    
+    .textbox {
+        width: 90%;
+        text-align: center;
+    }
+
+}
+
+/* Tablet Portrait */
+
+@media screen and (min-width: 570px){
+    .nav nav a {
+        float: clear;
+        background-color: white;
+        display: inline;
+        position: relative;
+        top: 25px;
+    }
+
+    header img {
+    	display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        width: 40%;
+    	}
+
+    #portrait {
+       	z-index: 8;
+       	width: 50%;
+       	display: block;
+        margin-left: auto;
+        margin-right: auto;
+       	border-radius: 50%;
+       	margin-top: 2em;
+       	margin-bottom: 2em;
+    }
+
+    .textbox {
+        width: 60%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .textcolor {
+        text-align: center;
+    }
+}
+
+/* Tablet Landscape */
+
+@media screen and (min-width: 768px){
+    header img {
+    	display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        width: 30%;
+    }
+
+    #portrait {
+       	z-index: 8;
+       	width: 40%;
+       	display: block;
+        margin-left: auto;
+        margin-right: auto;
+       	border-radius: 50%;
+       	margin-top: 2em;
+       	margin-bottom: 2em;
+    }
+
+}
+
+/* Desktop Small */
+
+@media screen and (min-width: 1024px){
+    header img {
+    	display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        width: 30%;
+    }
+
+    #portrait {
+       	z-index: 8;
+       	width: 40%;
+       	display: block;
+        margin-left: auto;
+        margin-right: auto;
+       	border-radius: 50%;
+       	margin-top: 2em;
+       	margin-bottom: 2em;
+    }
+
+    
+}
+
+/* Desktop Large */
+
+@media screen and (min-width: 1600px){
+    header img {
+    	display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        width: 30%;
+    }
+
+    #portrait {
+       	z-index: 8;
+       	width: 25%;
+       	display: block;
+        margin-left: auto;
+        margin-right: auto;
+       	border-radius: 50%;
+       	margin-top: 2em;
+       	margin-bottom: 2em;
+    }
+
+    
+}
