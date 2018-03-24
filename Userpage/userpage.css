@@ -36,11 +36,9 @@
     
     .Aufgaben {
     	background-color: white;
-		border: none;
 		color: #0071BC;
 		padding: 15px 32px;
 		text-align: center;
-		text-decoration: none;
 		display: block;
 		font-size: 16px;
 		margin: 4px 2px;
@@ -48,6 +46,7 @@
 		width: 20%;
 		margin: auto;
 		margin-bottom: 1em;
+		color:
     }
     
     .Aufgaben:hover {
